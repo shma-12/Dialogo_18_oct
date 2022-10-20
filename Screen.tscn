@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://NPC.tscn" type="PackedScene" id=2]
+
+[node name="Screen" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.917647, 0, 0, 1 )
+position = Vector2( 498, 297 )
+
+[node name="NPC" parent="." instance=ExtResource( 2 )]
+position = Vector2( 688, 305 )
